@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prof Roger Bassan | 03</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="box-nav">
+      <h1>EXERCÍCIO #03</h1>
+      <h2>Disciplina de Algoritmos</h2>
+    </div>
+    <div class="box">
+      <p>
+        Leia 2 números. Efetue as 4 operações matemáticas e mostre os
+        resultados.
+      </p>
+      <input id="inputValue1" type="number" placeholder="Digite o numero 1" />
+      <br /><br />
+      <input id="inputValue2" type="number" placeholder="Digite o numero 2" />
+      <br /><br />
+      <input id="adicao" type="radio" value="adicao" name="operation" />
+      <label for="adicao">Adicao</label>
+      <br /><br />
+      <input id="subtracao" type="radio" value="subtracao" name="operation" />
+      <label for="subtracao">Subtracao</label>
+      <br /><br />
+      <input id="multi" type="radio" value="multi" name="operation" />
+      <label for="multi">Multiplicacao</label>
+      <br /><br />
+      <input id="divisao" type="radio" value="divisao" name="operation" />
+      <label for="divisao">Divisao</label>
+      <br /><br />
+      <button type="button" onclick="calculadora()">Enviar</button>
+      <br /><br />
+      <span id="result"></span>
+    </div>
+  </body>
+</html>

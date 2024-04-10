@@ -5,6 +5,9 @@ function somaEMediaIdade() {
   const soma = idade1 + idade2;
   const media = soma / 2;
 
-  console.log(`A soma das idades e = ${soma}`);
-  console.log(`A media das idades e = ${media}`);
+  var resultadoSoma = "A soma das idades e =";
+  var resultadoMedia = "A media das idades e =";
+
+  console.log(`${resultadoSoma} ${soma}`);
+  console.log(`${resultadoMedia} ${media}`);
 }
