@@ -1,7 +1,7 @@
 function calcularVolume() {
-  const largura = parseFloat(document.getElementById("inputValue1").value);
-  const comprimento = parseFloat(document.getElementById("inputValue2").value);
-  const altura = parseFloat(document.getElementById("inputValue3").value);
+  const largura = parseFloat(document.getElementById("largura").value);
+  const comprimento = parseFloat(document.getElementById("comprimento").value);
+  const altura = parseFloat(document.getElementById("altura").value);
 
   const result = largura * comprimento * altura;
 

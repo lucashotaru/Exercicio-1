@@ -2,8 +2,51 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Prof Roger Bassan | 01</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Prof Roger Bassan | Converter metros para pés</title>
+    <style>
+      body {
+        background-color: cornflowerblue;
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+      }
+      .box-nav {
+        background-color: gold;
+        padding: 5px;
+        border-radius: 15px;
+      }
+      .box {
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        border-radius: 15px;
+        color: white;
+      }
+      input {
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        font-size: 15px;
+        width: 50%;
+      }
+      button {
+        padding: 10px;
+        border: none;
+        outline: none;
+        width: 50%;
+        background-color: slateblue;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      button:hover {
+        background-color: cornflowerblue;
+      }
+    </style>
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -13,11 +56,7 @@
     </div>
     <div class="box">
       <p>Leia uma distância em metros e converta para pés.</p>
-      <input
-        id="inputValue"
-        type="number"
-        placeholder="Digite os metros que quer converter"
-      />
+      <input id="inputValue" type="number" placeholder="Digite os metros que quer converter" />
       <br /><br />
       <button type="button" onclick="converterMetrosParaPes()">Enviar</button>
       <br /><br />

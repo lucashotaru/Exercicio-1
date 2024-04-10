@@ -2,28 +2,63 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Prof Roger Bassan | 04</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Prof Roger Bassan | Calcula área do circulo</title>
+    <style>
+      body {
+        background-color: cornflowerblue;
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+      }
+      .box-nav {
+        background-color: gold;
+        padding: 5px;
+        border-radius: 15px;
+      }
+      .box {
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        border-radius: 15px;
+        color: white;
+      }
+      input {
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        font-size: 15px;
+        width: 50%;
+      }
+      button {
+        padding: 10px;
+        border: none;
+        outline: none;
+        width: 50%;
+        background-color: slateblue;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      button:hover {
+        background-color: cornflowerblue;
+      }
+    </style>
     <script src="js/script.js"></script>
   </head>
   <body>
     <div class="box-nav">
-      <h1>EXERCÍCIO #04</h1>
+      <h1>EXERCÍCIO #05</h1>
       <h2>Disciplina de Algoritmos</h2>
     </div>
     <div class="box">
-      <p>Faça um algoritmo que calcule a área de uma sala.</p>
-      <input id="inputValue1" type="number" placeholder="Digite a largura" />
+      <p>Faça um algoritmo que calcule a área de um círculo.</p>
+      <input id="raio" type="number" placeholder="Digite o raio do circulo" />
       <br /><br />
-      <input
-        id="inputValue2"
-        type="number"
-        placeholder="Digite o comprimento"
-      />
-      <br /><br />
-      <input id="inputValue3" type="number" placeholder="Digite a altura" />
-      <br /><br />
-      <button type="button" onclick="calcularVolume()">Enviar</button>
+      <button type="button" onclick="calcularAreaCirculo()">Enviar</button>
       <br /><br />
       <span id="result"></span>
     </div>

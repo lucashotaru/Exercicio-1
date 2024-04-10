@@ -1,7 +1,7 @@
 //Tabela da base do calculo de 2023 https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2023
 
 function calcularImpostoDeRenda() {
-  const valorSalario = parseFloat(document.getElementById("inputValue").value);
+  const valorSalario = parseFloat(document.getElementById("salario").value);
 
   console.log(valorSalario);
 
@@ -20,7 +20,9 @@ function calcularImpostoDeRenda() {
 
   if (result == "Isento") {
     console.log("Salario isento de imposto de renda");
+    document.getElementById("isento").innerHTML = `Salario isento de imposto de renda`;
   } else {
     console.log(`Parcela do imposto = ${result}`);
+    document.getElementById("parcela").innerHTML = `Resultado da parcela = ${result}`;
   }
 }
